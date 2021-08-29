@@ -1,0 +1,5 @@
+D:\aulas\heranca\Herenca\Herenca\obj\Debug\net5.0\Herenca.csproj.AssemblyReference.cache
+D:\aulas\heranca\Herenca\Herenca\obj\Debug\net5.0\Herenca.GeneratedMSBuildEditorConfig.editorconfig
+D:\aulas\heranca\Herenca\Herenca\obj\Debug\net5.0\Herenca.AssemblyInfoInputs.cache
+D:\aulas\heranca\Herenca\Herenca\obj\Debug\net5.0\Herenca.AssemblyInfo.cs
+D:\aulas\heranca\Herenca\Herenca\obj\Debug\net5.0\Herenca.csproj.CoreCompileInputs.cache
