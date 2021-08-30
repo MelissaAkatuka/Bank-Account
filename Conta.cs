@@ -38,9 +38,10 @@ namespace Heranca
             OperacoesEmConta.Add(valor);
         }
 
-        public void Transferir(double valor, Conta conta)
+        public virtual void Saque(double valor)
         {
-            throw new NotImplementedException();
+            Saldo -= valor;
+            OperacoesEmConta.Remove(valor);
         }
     }
 }

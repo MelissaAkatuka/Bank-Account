@@ -10,6 +10,6 @@ namespace Heranca
     {
         void Depositar(double valor);
 
-        void Transferir(double valor, Conta conta);
+        
     }
 }

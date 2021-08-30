@@ -8,30 +8,21 @@ namespace Heranca
         {
             Rodar();
         }
-
         private static void Rodar()
         {
-            var conta = new ContaCorrente(10);
+            var conta = new ContaCorrente(20);
             var contaConvertida = ConverterConta<ContaCorrente, ContaInvestimento>(conta); //entrada é conta corrente e saida é conta investimento
-            Console.WriteLine(contaConvertida);
+            Console.WriteLine(contaConvertida.Saldo);
         }
-
-        public static void Transferencia<A, B>(int valor, A contaOrigem, A contaDestino) where A : Conta where B : Conta
-        {
-            contaOrigem.Transferir(valor, contaDestino);
-            contaDestino.Depositar(valor);
-        }
-
         public static B ConverterConta<A, B>(A contaOrigem) where A : Conta where B : Conta
         {
             var contaConvertida = Activator.CreateInstance<B>(); //criar instancia a partir de um obj generico
 
             contaConvertida.Agencia = contaOrigem.Agencia; //criou uma conta nova
-            contaConvertida.Saldo = contaOrigem.Saldo;
             contaConvertida.Numero = contaOrigem.Numero;
 
             contaConvertida.Depositar(contaOrigem.Saldo);
-            contaOrigem = null;
+            contaOrigem = null; //pra matar a antiga 
             return contaConvertida;
         }
     }

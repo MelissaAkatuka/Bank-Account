@@ -8,13 +8,15 @@ namespace Heranca
 {
     public class ContaCorrente : Conta
     {
+        public ContaCorrente() {
+        }
         public ContaCorrente(double depositoInicial) : base(depositoInicial)
         {
         }
 
         public void Sacar(double valor)
         {
-            if (valor < Saldo)
+            if (valor <= Saldo)
             {
                 Saldo -= valor;
             }

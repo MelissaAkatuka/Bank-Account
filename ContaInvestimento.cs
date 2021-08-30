@@ -8,6 +8,7 @@ namespace Heranca
 {
     public class ContaInvestimento : ContaRendimento, IContaInvestimento
     {
+        public ContaInvestimento(){}
         public ContaInvestimento(double depositoInicial) : base(depositoInicial)
         {
             RenderCashBack();
